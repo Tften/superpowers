@@ -11,7 +11,6 @@ Live in `tests/`. Currently:
 
 - `tests/opencode/` — bash tests for OpenCode plugin loading, bootstrap caching, and tool registration.
 - `tests/diagnosing-superpowers/test-skill-structure.sh` — structural checks for the diagnosing-superpowers skill (frontmatter, referenced files, leak scan, word budget).
-- `tests/explicit-skill-requests/` — multi-turn and skill-name-prompted tests not covered by quorum.
 - `tests/shell-lint/test-lint-shell.sh` — tests for `scripts/lint-shell.sh`.
 - `tests/systematic-debugging/test-find-polluter.sh` — tests for the find-polluter debug helper.
 - `tests/version-bump/test-bump-version.sh` — tests for `scripts/bump-version.sh`.

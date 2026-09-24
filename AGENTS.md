@@ -5,6 +5,7 @@
 - 仅支持 **OpenCode**(V1 + V2),其他 harness 的适配层已全部移除
 - 与上游彻底独立,不维护同步能力,不向上游提交 PR
 - 保留上游全部技能内容与设计档案,作为定制的基础
+- 已删除 subagent-driven-development 与 dispatching-parallel-agents(本环境工作流为纯 Inline,禁用 Subagent);executing-plans 继承了 SDD 的 workspace/ledger 脚本
 
 ## 如果你是 AI Agent
 
@@ -19,7 +20,7 @@
 
 | 路径 | 内容 |
 |---|---|
-| `skills/` | 16 个技能本体,是仓库的核心资产 |
+| `skills/` | 13 个技能本体(纯 Inline 工作流),是仓库的核心资产 |
 | `.opencode/plugins/superpowers.js` | OpenCode 插件逻辑(bootstrap 注入 + 技能注册,内嵌工具映射) |
 | `index.js` | OpenCode V2 目录形式插件入口(re-export superpowers.js) |
 | `scripts/` | `lint-shell.sh`(shell lint)、`bump-version.sh`(版本同步) |
