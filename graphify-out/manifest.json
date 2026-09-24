@@ -437,12 +437,6 @@
     "ast_hash": "220516767f7ee40ba17f712cf9613c08",
     "semantic_hash": "220516767f7ee40ba17f712cf9613c08"
   },
-  "skills/brainstorming/spec-document-reviewer-prompt.md": {
-    "mtime": 1790218664.1430953,
-    "seen": 1790233383.5598662,
-    "ast_hash": "64a9f03fe422e92da8391e80673b6500",
-    "semantic_hash": "64a9f03fe422e92da8391e80673b6500"
-  },
   "skills/diagnosing-superpowers/SKILL.md": {
     "mtime": 1790218664.1430953,
     "seen": 1790233383.5598662,
@@ -564,10 +558,10 @@
     "semantic_hash": "c0f20b950e8997b04bdc42defdc0b32d"
   },
   "skills/executing-plans/SKILL.md": {
-    "mtime": 1790248763.762491,
-    "seen": 1790251341.5152512,
-    "ast_hash": "a3db68aded2007dc05cd79363fd45c68",
-    "semantic_hash": "a3db68aded2007dc05cd79363fd45c68"
+    "mtime": 1790254525.7668142,
+    "seen": 1790254993.9971883,
+    "ast_hash": "963633127f483ce7126e4bd91eab5376",
+    "semantic_hash": "963633127f483ce7126e4bd91eab5376"
   },
   "skills/receiving-code-review/SKILL.md": {
     "mtime": 1790218664.158746,
@@ -665,12 +659,6 @@
     "ast_hash": "5be3e7ff8732aacf25c60cea2a6be0c1",
     "semantic_hash": "5be3e7ff8732aacf25c60cea2a6be0c1"
   },
-  "skills/writing-plans/plan-document-reviewer-prompt.md": {
-    "mtime": 1790218664.158746,
-    "seen": 1790233383.5608523,
-    "ast_hash": "62253134237279d1fb6f7c12eebac14f",
-    "semantic_hash": "62253134237279d1fb6f7c12eebac14f"
-  },
   "assets/app-icon.png": {
     "mtime": 1790218664.1109672,
     "seen": 1790233383.5608523,
@@ -690,10 +678,10 @@
     "semantic_hash": "956a1fb186acbaaeb334941ecd9541fd"
   },
   "skills/requesting-code-review/SKILL.md": {
-    "mtime": 1790218664.158746,
-    "seen": 1790237647.777419,
-    "ast_hash": "c5fce09fadd269f7b07178a3f7e9eaf9",
-    "semantic_hash": "c5fce09fadd269f7b07178a3f7e9eaf9"
+    "mtime": 1790254549.8354695,
+    "seen": 1790254993.9971883,
+    "ast_hash": "4c2f8f1faf464c7b9a33f2d617f9fd5e",
+    "semantic_hash": "4c2f8f1faf464c7b9a33f2d617f9fd5e"
   },
   "skills/executing-plans/scripts/review-package": {
     "mtime": 1790218664.158746,

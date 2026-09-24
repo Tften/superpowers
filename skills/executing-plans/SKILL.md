@@ -9,13 +9,12 @@ Execute the plan yourself, task by task, in this session: no implementer
 subagent per task, no reviewer per task. One fresh-context review of the
 whole branch at the end.
 
-**Why inline:** Subagent-driven development pays for a fresh implementer
-and a fresh reviewer on every task, each re-reading the codebase from zero.
-Inline execution pays for one context (yours) plus one reviewer at the end.
-What it gives up is a fresh context per task and a second pair of eyes per
-task. This skill keeps what those two things bought, by other means: the
-brief is the spec, the ledger is your memory, TDD is the per-task gate, and
-the final reviewer is the second pair of eyes.
+**Why inline:** every dispatch pays for a fresh context that re-reads the
+codebase from zero. Inline execution pays for one context (yours) plus one
+review at the end. What it gives up is a fresh context per task and a
+second pair of eyes per task. This skill keeps what those two things
+bought, by other means: the brief is the spec, the ledger is your memory,
+TDD is the per-task gate, and the final review is the second pair of eyes.
 
 **Core principle:** The plan already did the thinking. Execute it exactly,
 prove each step with a test you watched fail and then pass, and leave a
@@ -344,7 +343,7 @@ Task 2: Recovery modes
 
 ...
 
-[After all tasks: review-package plan MERGE_BASE HEAD; dispatch code-reviewer, most capable model]
+[After all tasks: review-package plan MERGE_BASE HEAD; code-reviewer review — dispatch if available, else self-review]
 Reviewer: One Important finding — progress reporting interval hardcoded. Two Minor.
 [Re-grade: Important stands; minors → ledger as deferred]
 [Fix pass: test_progress_interval_configurable RED → extract PROGRESS_INTERVAL → GREEN; suite 12/12; commit]
