@@ -1,12 +1,12 @@
 # Graph Report - superpowers  (2026-09-25)
 
 ## Corpus Check
-- 0 files · ~0 words
+- 103 files · ~144,526 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 564 nodes · 827 edges · 45 communities (26 shown, 19 thin omitted)
-- Extraction: 89% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 86 edges (avg confidence: 0.87)
+- 550 nodes · 810 edges · 44 communities (25 shown, 19 thin omitted)
+- Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 86 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
@@ -41,7 +41,6 @@
 - TDD 与好测试原则
 - 头脑风暴三路径
 - 会话诊断规则与分析师
-- Worktree 设计档案
 - 品牌图标资产
 - 视觉伴侣实现档案
 - SDD 工作区与发布档案
@@ -94,7 +93,7 @@
 - **Session Diagnosis Bundle Workflow** — skills_diagnosing_superpowers_templates_bundle_readme, skills_diagnosing_superpowers_templates_case, skills_diagnosing_superpowers_templates_report, skills_diagnosing_superpowers_templates_issue, skills_diagnosing_superpowers_references_redaction_policy [INFERRED 0.95]
 - **Superpowers Codex Plugin Branding** — assets_app-icon_app_icon, assets_app-icon_plugin_logo, assets_app-icon_brand_identity [INFERRED]
 
-## Communities (45 total, 19 thin omitted)
+## Communities (44 total, 19 thin omitted)
 
 ### Community 11 - "Bootstrap 事件测试"
 Cohesion: 0.10
@@ -168,10 +167,6 @@ Nodes (14): Architectural 路径, Bounded 路径, 设计文档约定 (docs/super
 Cohesion: 0.10
 Nodes (37): Approval gates (hard rule), Case workspace (~/.superpowers/diagnosing-superpowers/<session-id>/), cost-and-time analyst dimension (prompts/cost-and-time.md), Dispatch or inline (hard rule), Exact paths to subagents (hard rule), Export (workflow step 6), GitHub issues (workflow step 5), Human prompts only (hard rule) (+29 more)
 
-### Community 20 - "Worktree 设计档案"
-Cohesion: 0.29
-Nodes (10): Worktree Hooks Symlinking, Step 0.5: Worktree Consent, Step 0: Detect Existing Isolation, Step 1a: Native Worktree Tools (preferred), Step 1b: Git Worktree Fallback, Stale Worktree Pruning, Worktree Rototill Detect-and-Defer Design (spec), Consent-Authorization Bridge (+2 more)
-
 ### Community 23 - "品牌图标资产"
 Cohesion: 0.50
 Nodes (5): Codex Plugin Asset Packaging, Superpowers Brand Identity (Prime Radiant), Codex Plugin Logo Role, Swoosh-and-Central-Dot Emblem Motif (mirrored curved wings around a center dot, per companion superpowers-small.svg), Superpowers App Icon (app-icon.png, 2134x2134 square PNG)
@@ -193,8 +188,8 @@ Cohesion: 0.15
 Nodes (25): brainstorm-server (lib/brainstorm-server), .events Per-Screen Event Stream, frame-template.html UI frame, helper.js client script, Selection Indicator Bar, visual-companion.md skill instructions, wait-for-feedback.sh (deleted script), wrapInFrame Comment-Placeholder Injection (+17 more)
 
 ### Community 7 - "Eval 实施档案"
-Cohesion: 0.11
-Nodes (24): drill Eval Harness (evals/drill), SUPERPOWERS_ROOT Default, references/antigravity-tools.md, references/gemini-tools.md, Planted Defect Review Scenario, Reviewer Warn Verdict Channel, Forensic Disambiguation Tax, scripts/sdd-workspace.sh (+16 more)
+Cohesion: 0.14
+Nodes (20): drill Eval Harness (evals/drill), SUPERPOWERS_ROOT Default, references/antigravity-tools.md, references/gemini-tools.md, Planted Defect Review Scenario, Reviewer Warn Verdict Channel, Forensic Disambiguation Tax, scripts/sdd-workspace.sh (+12 more)
 
 ### Community 9 - "社区文档与插件说明"
 Cohesion: 0.10
@@ -209,8 +204,8 @@ Nodes (23): Contributor Covenant v3.0, Code of Conduct Enforcement Ladder, OpenC
   assets/app-icon.png · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **126 isolated node(s):** `Red-Green-Refactor TDD Cycle`, `SDD Workspace and Ledger`, `checkpoint`, `childEvent`, `empty` (+121 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 193 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **125 isolated node(s):** `Red-Green-Refactor TDD Cycle`, `SDD Workspace and Ledger`, `checkpoint`, `childEvent`, `empty` (+120 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 187 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **19 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
@@ -223,10 +218,10 @@ _Questions this graph is uniquely positioned to answer:_
 - **What is the exact relationship between `Swoosh-and-Central-Dot Emblem Motif (mirrored curved wings around a center dot, per companion superpowers-small.svg)` and `Superpowers App Icon (app-icon.png, 2134x2134 square PNG)`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **Why does `diagnosing-superpowers (SKILL.md)` connect `会话诊断规则与分析师` to `事件模型与等待函数`, `会话诊断模板与脱敏`?**
-  _High betweenness centrality (0.068) - this node is a cross-community bridge._
+  _High betweenness centrality (0.070) - this node is a cross-community bridge._
 - **Why does `diagnosing-superpowers skill` connect `社区文档与插件说明` to `会话诊断模板与脱敏`?**
-  _High betweenness centrality (0.054) - this node is a cross-community bridge._
+  _High betweenness centrality (0.056) - this node is a cross-community bridge._
 - **Why does `Diagnosing Superpowers Skill Implementation Plan` connect `会话诊断模板与脱敏` to `社区文档与插件说明`?**
-  _High betweenness centrality (0.053) - this node is a cross-community bridge._
+  _High betweenness centrality (0.055) - this node is a cross-community bridge._
 - **Are the 4 inferred relationships involving `diagnosing-superpowers (SKILL.md)` (e.g. with `Similar-Session Matcher Prompt (diagnosing-superpowers)` and `Skill Timeline Analyst Prompt (diagnosing-superpowers)`) actually correct?**
   _`diagnosing-superpowers (SKILL.md)` has 4 INFERRED edges - model-reasoned connections that need verification._

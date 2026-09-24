@@ -227,12 +227,6 @@
     "ast_hash": "bd9edfe0cac4da5662b671247c2b93b2",
     "semantic_hash": "bd9edfe0cac4da5662b671247c2b93b2"
   },
-  "docs/superpowers/plans/2026-04-06-worktree-rototill.md": {
-    "mtime": 1790218664.1181989,
-    "seen": 1790233383.5598662,
-    "ast_hash": "f702856574ee6e9adb66d5e722158e97",
-    "semantic_hash": "f702856574ee6e9adb66d5e722158e97"
-  },
   "docs/superpowers/plans/2026-05-06-lift-drill-into-evals.md": {
     "mtime": 1790218664.1181989,
     "seen": 1790233383.5598662,
@@ -298,12 +292,6 @@
     "seen": 1790233383.5598662,
     "ast_hash": "2a081bda4c6e67b5a7b89eda115472bb",
     "semantic_hash": "2a081bda4c6e67b5a7b89eda115472bb"
-  },
-  "docs/superpowers/specs/2026-04-06-worktree-rototill-design.md": {
-    "mtime": 1790218664.1270552,
-    "seen": 1790233383.5598662,
-    "ast_hash": "b83c8db3a213fe1c55c409a62874e864",
-    "semantic_hash": "b83c8db3a213fe1c55c409a62874e864"
   },
   "docs/superpowers/specs/2026-05-05-platform-neutral-config-refs-design.md": {
     "mtime": 1790218664.1270552,
