@@ -1,37 +1,38 @@
 # Graph Report - superpowers  (2026-09-24)
 
 ## Corpus Check
-- 10 files · ~174,018 words
+- 3 files · ~170,323 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 562 nodes · 890 edges · 37 communities (26 shown, 11 thin omitted)
-- Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 94 edges (avg confidence: 0.86)
-- Token cost: 7,200 input · 15,600 output
+- 570 nodes · 875 edges · 40 communities (27 shown, 13 thin omitted)
+- Extraction: 88% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 99 edges (avg confidence: 0.86)
+- Token cost: 5,400 input · 11,200 output
 
 ## Community Hubs (Navigation)
-- 文档评审系统设计档案
+- 技能测试方法档案
 - 基本工作流与核心技能
-- OpenCode 插件集成
-- Codex 兼容设计档案
+- 零依赖服务器档案
 - 个人版维护指南
-- 头脑风暴三路径
+- Codex 兼容设计档案
 - 会话诊断规则
-- 可视化头脑风暴档案
-- opencode 测试环境
+- OpenCode 插件集成
 - 行为准则与 OpenCode 指南
+- opencode 测试环境
+- 分支完成与 Handoff 档案
 - 事件模型与检查点
 - 系统化调试案例
-- 零依赖服务器档案
-- 分支完成与 Handoff 档案
+- 好测试原则(writing-good-tests)
 - Bootstrap 映射测试
 - 版本管理 CLI
 - 插件入口与缓存
+- 头脑风暴三路径
 - Shell 脚本 Lint
 - Lint 脚本测试
 - Python 测试夹具
 - find-polluter 测试
 - package.json 清单
+- 诊断与结构测试
 - 品牌图标资产
 - 视觉伴侣实现档案
 - Hermes 版本接线实现
@@ -44,33 +45,35 @@
 - 交接自省档案
 - Auth 共享夹具档案
 - 只读评审规则档案
+- Exercise the Real Thing 档案
+- Name the Break 档案
 - 原生 Worktree 工具档案
 - 计划评审提示档案
-- Community 36
+- Spec 评审提示档案
 
 ## God Nodes (most connected - your core abstractions)
-1. `executing-plans 技能(内联执行计划)` - 29 edges
-2. `AGENTS.md — Superpowers 个人特调版维护指南` - 22 edges
-3. `writing-plans 技能(实施计划编写)` - 19 edges
-4. `writing-skills 技能 (SKILL.md)` - 18 edges
-5. `README.md — Superpowers 个人特调版说明` - 18 edges
-6. `executing-plans Skill` - 15 edges
-7. `SDD Task-Scoped Review Dispatch Design (spec)` - 14 edges
-8. `Systematic Debugging Skill` - 14 edges
-9. `Diagnosing Superpowers Skill Implementation Plan` - 13 edges
-10. `Strict-Cost SDD Design (spec)` - 12 edges
+1. `executing-plans 技能(内联执行计划)` - 24 edges
+2. `Superpowers 个人特调版(基于 obra/superpowers 的个人定制版)` - 20 edges
+3. `executing-plans Skill` - 15 edges
+4. `SDD Task-Scoped Review Dispatch Design (spec)` - 14 edges
+5. `Systematic Debugging Skill` - 14 edges
+6. `writing-plans 技能(实施计划编写)` - 14 edges
+7. `内容清单·技能库(12 个技能:测试/调试/协作/元技能)` - 14 edges
+8. `Diagnosing Superpowers Skill Implementation Plan` - 13 edges
+9. `Strict-Cost SDD Design (spec)` - 12 edges
+10. `SDD Fix-Loop Redesign Implementation Plan` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `可组合技能方法论(Superpowers)` --conceptually_related_to--> `零上下文工程师假设`  [INFERRED]
-  README.md → skills/writing-plans/SKILL.md
+- `Superpowers(个人特调版)— 注入 coding agent 的软件开发方法论技能集` --semantically_similar_to--> `Superpowers 个人特调版(基于 obra/superpowers 的个人定制版)`  [INFERRED] [semantically similar]
+  README.md → AGENTS.md
+- `obra/superpowers(上游项目)` --semantically_similar_to--> `obra/superpowers(上游仓库)`  [INFERRED] [semantically similar]
+  README.md → AGENTS.md
+- `仓库差异:仅支持 OpenCode` --semantically_similar_to--> `仅支持 OpenCode(V1 + V2)`  [INFERRED] [semantically similar]
+  README.md → AGENTS.md
+- `测试与实现一起交付(Tests ship with the implementation)` --conceptually_related_to--> `test-driven-development — RED-GREEN-REFACTOR 循环(含测试反模式参考)`  [INFERRED]
+  skills/test-driven-development/writing-good-tests.md → README.md
 - `OpenCode Tool Mapping` --conceptually_related_to--> `using-superpowers Skill`  [INFERRED]
   .opencode/INSTALL.md → docs/plans/2025-11-22-opencode-support-design.md
-- `Native (Inline) Execution Mode for executing-plans` --references--> `executing-plans Skill`  [EXTRACTED]
-  RELEASE-NOTES.md → docs/plans/2025-11-22-opencode-support-implementation.md
-- `executing-plans Skill` --conceptually_related_to--> `Skill: receiving-code-review`  [INFERRED]
-  docs/plans/2025-11-22-opencode-support-implementation.md → skills/receiving-code-review/SKILL.md
-- `skills/ 技能库(13 个技能,纯 Inline 工作流)` --references--> `writing-plans 技能(实施计划编写)`  [INFERRED]
-  AGENTS.md → skills/writing-plans/SKILL.md
 
 ## Import Cycles
 - None detected.
@@ -87,47 +90,47 @@
 - **Session Diagnosis Bundle Workflow** — skills_diagnosing_superpowers_templates_bundle_readme, skills_diagnosing_superpowers_templates_case, skills_diagnosing_superpowers_templates_report, skills_diagnosing_superpowers_templates_issue, skills_diagnosing_superpowers_references_redaction_policy [INFERRED 0.95]
 - **Superpowers Codex Plugin Branding** — assets_app-icon_app_icon, assets_app-icon_plugin_logo, assets_app-icon_brand_identity [INFERRED]
 
-## Communities (37 total, 11 thin omitted)
+## Communities (40 total, 13 thin omitted)
 
-### Community 0 - "文档评审系统设计档案"
-Cohesion: 0.06
-Nodes (62): Document Review System Implementation Plan, Bash Test Deletion Gate, Document Review System Design (spec), Plan Document Reviewer, Review Loop Error Handling Policy, Spec Document Reviewer, codex-tools.md platform reference, subagent-driven-development skill (+54 more)
+### Community 0 - "技能测试方法档案"
+Cohesion: 0.05
+Nodes (68): Bash Test Deletion Gate, subagent-driven-development skill, Platform-Neutral Config-File References Phase B Design (spec), Phase B Config-File Substitution Rules, Platform-Neutral Prose Phase A Design (spec), Phase A Agent-Neutral Prose Style, Claude Search Optimization to Skill Discovery Optimization Rename, writing-skills skill (+60 more)
 
 ### Community 1 - "基本工作流与核心技能"
-Cohesion: 0.09
-Nodes (41): 基本工作流(7 步:brainstorming → worktrees → writing-plans → executing-plans → TDD → code-review → finishing), Superpowers 哲学(TDD/系统化优于临时起意/降低复杂度/证据优于断言), brainstorming 技能(苏格拉底式设计打磨), finishing-a-development-branch 技能(合并/丢弃决策流程), receiving-code-review 技能(回应审查反馈), requesting-code-review 技能(预审查清单), systematic-debugging 技能(四阶段根因分析), test-driven-development 技能(RED-GREEN-REFACTOR) (+33 more)
+Cohesion: 0.08
+Nodes (45): 基本工作流(7 步强制流程), 哲学:测试驱动/系统化优于临时起意/降低复杂度/证据优于断言, brainstorming — 苏格拉底式设计打磨, executing-plans — 内联执行计划(一个上下文,一次终审), finishing-a-development-branch — 合并/保留/丢弃决策流程, 内容清单·技能库(12 个技能:测试/调试/协作/元技能), receiving-code-review — 回应审查反馈, requesting-code-review — 预审查清单 (+37 more)
 
-### Community 2 - "OpenCode 插件集成"
+### Community 2 - "零依赖服务器档案"
+Cohesion: 0.08
+Nodes (44): Visual Brainstorming Refactor Implementation Plan, Zero-Dependency Brainstorm Server Implementation Plan, server.js Zero-Dependency Brainstorm Server, WebSocket Protocol Layer (RFC 6455 Frame Handling), Visual Brainstorming Companion Issue and Change Catalog, PID Ownership Check, Per-Session Secret Key Authentication, Terminal vs HTML Approval Gate (+36 more)
+
+### Community 3 - "个人版维护指南"
 Cohesion: 0.07
-Nodes (43): superpowers-codex CLI Script, Installing Superpowers for OpenCode, OpenCode Tool Mapping, superpowers.js OpenCode Plugin, OpenCode Support Design, find_skills Custom Tool, session.started Bootstrap Hook, Skill Shadowing (personal skills override core skills) (+35 more)
+Nodes (38): scripts/bump-version.sh — 版本同步脚本, 提交约定(fea/* 分支,type: 描述,一次提交聚焦一件事), 约束:设计档案是唯一依据, docs/superpowers/ — 上游设计档案(specs + plans,20 份 spec / 16 份 plan),只读参考, graphify-out/ — 代码库知识图谱, graphify 知识图谱工作流(--update / query / graph.html), index.js — OpenCode V2 目录形式插件入口(re-export superpowers.js), 纯 Inline 工作流(禁用 Subagent) (+30 more)
 
-### Community 3 - "Codex 兼容设计档案"
+### Community 4 - "Codex 兼容设计档案"
 Cohesion: 0.08
 Nodes (39): Codex App Compatibility Implementation Plan, references/codex-tools.md, Detached HEAD Handoff to Bash, Codex App Environment Detection, Worktree Rototill Implementation Plan, Native Tool Preference Rule, Provenance-Based Worktree Cleanup, Testing Skills Framework (RED/GREEN/PRESSURE) (+31 more)
 
-### Community 4 - "个人版维护指南"
-Cohesion: 0.09
-Nodes (34): 技能是行为塑造代码,不是散文, scripts/bump-version.sh — 版本同步脚本, 提交约定(fea/* 分支,type: 描述), docs/superpowers/ 设计档案(specs + plans), graphify-out/ 知识图谱, index.js — OpenCode V2 目录形式插件入口, 纯 Inline 工作流(禁用 Subagent), AGENTS.md — Superpowers 个人特调版维护指南 (+26 more)
-
-### Community 5 - "头脑风暴三路径"
-Cohesion: 0.09
-Nodes (35): brainstorming 技能 (SKILL.md), Architectural 路径, Bounded 路径, 设计文档约定 (docs/superpowers/specs/YYYY-MM-DD-<topic>-design.md), elements-of-style:writing-clearly-and-concisely 技能 (可选), HARD-GATE 实施前置门, 路径单向棘轮 (只能升级), Red Flags 表 (想法 vs 现实) (+27 more)
-
-### Community 6 - "会话诊断规则"
+### Community 5 - "会话诊断规则"
 Cohesion: 0.11
 Nodes (28): Diagnosed Session Case File, Diagnosing Superpowers Skill Implementation Plan, Transcript Context Safety Rules, Per-Harness Reference Files, No-Diagnosis Reporting Rule, Scrub Pipeline (scrub plus scrub-audit), analyst-common.md Shared Analyst Prompt Header, references/context-safety.md (+20 more)
 
-### Community 7 - "可视化头脑风暴档案"
-Cohesion: 0.15
-Nodes (25): Visual Brainstorming Refactor Implementation Plan, brainstorm-server (lib/brainstorm-server), Browser Displays, Terminal Commands Model, Visual Brainstorming Refactor Design (spec), .events Per-Screen Event Stream, frame-template.html UI frame, helper.js client script, Selection Indicator Bar (+17 more)
+### Community 6 - "OpenCode 插件集成"
+Cohesion: 0.11
+Nodes (27): superpowers-codex CLI Script, Installing Superpowers for OpenCode, OpenCode Tool Mapping, superpowers.js OpenCode Plugin, OpenCode Support Design, find_skills Custom Tool, session.started Bootstrap Hook, Skill Shadowing (personal skills override core skills) (+19 more)
+
+### Community 7 - "行为准则与 OpenCode 指南"
+Cohesion: 0.11
+Nodes (26): Contributor Covenant v3.0, Code of Conduct Enforcement Ladder, Prime Radiant Community Code of Conduct, Skills Improvements from User Feedback, Configuration Change Verification, Mock-Interface Drift Anti-Pattern, Superpowers for OpenCode Guide, OpenCode V1 Plugin Integration (+18 more)
 
 ### Community 8 - "opencode 测试环境"
 Cohesion: 0.11
 Nodes (17): HOME, OPENCODE_CONFIG_DIR, setup.sh script, XDG_CONFIG_HOME, run_missing_file_check(), run_present_file_check(), test-bootstrap-caching.sh script, test-plugin-loading.sh script (+9 more)
 
-### Community 9 - "行为准则与 OpenCode 指南"
-Cohesion: 0.10
-Nodes (23): Contributor Covenant v3.0, Code of Conduct Enforcement Ladder, Prime Radiant Community Code of Conduct, Superpowers for OpenCode Guide, OpenCode V1 Plugin Integration, OpenCode V2 Plugin API Integration, Platform-Neutral Config-File References Phase B Design (spec), Phase B Config-File Substitution Rules (+15 more)
+### Community 9 - "分支完成与 Handoff 档案"
+Cohesion: 0.13
+Nodes (23): Codex App Finishing Handoff Payload, codex-tools.md platform reference, Codex App Compatibility Design (spec), Read-Only Git Environment Detection, finishing-a-development-branch skill, IN_LINKED_WORKTREE Signal, ON_DETACHED_HEAD Signal, Sandbox Fallback Behavior (+15 more)
 
 ### Community 10 - "事件模型与检查点"
 Cohesion: 0.10
@@ -137,33 +140,33 @@ Nodes (14): checkpoint, childEvent, empty, freshRootEvent, newPromptAfterCheckpo
 Cohesion: 0.13
 Nodes (14): Real-World Debugging Session (2025-10-03), Condition-Based Waiting Technique, Defense-in-Depth Validation Technique, find-polluter.sh script, Root Cause Tracing Technique, Systematic Debugging Skill, Four-Phase Debugging Framework, The Iron Law: No Fixes Without Root Cause Investigation (+6 more)
 
-### Community 12 - "零依赖服务器档案"
-Cohesion: 0.15
-Nodes (19): Zero-Dependency Brainstorm Server Implementation Plan, server.js Zero-Dependency Brainstorm Server, WebSocket Protocol Layer (RFC 6455 Frame Handling), Visual Brainstorming Companion Issue and Change Catalog, PID Ownership Check, Per-Session Secret Key Authentication, Terminal vs HTML Approval Gate, Visual Brainstorming Companion (server.cjs and Web UI) (+11 more)
-
-### Community 13 - "分支完成与 Handoff 档案"
+### Community 12 - "好测试原则(writing-good-tests)"
 Cohesion: 0.16
-Nodes (19): Codex App Finishing Handoff Payload, Codex App Compatibility Design (spec), Read-Only Git Environment Detection, finishing-a-development-branch skill, IN_LINKED_WORKTREE Signal, ON_DETACHED_HEAD Signal, Sandbox Fallback Behavior, Consent-Authorization Bridge (+11 more)
+Nodes (18): 测行为,不测文本(Behavior, not text), 测你的边界契约,不测框架(Your code, not the framework), 完整镜像真实数据(Mirror real data completely), 原则 2:每个测试锻炼真实对象(Exercise the Real Thing), 门函数 2:加 mock 或测试辅助前的检查, 门函数 1:写测试体前的检查, 独立推导期望值(字面量与手工校验 fixture), mock 不配拥有断言(The mock earns no assertions) (+10 more)
 
-### Community 14 - "Bootstrap 映射测试"
+### Community 13 - "Bootstrap 映射测试"
 Cohesion: 0.12
 Nodes (6): afterFirst, afterSecond, firstOutput, mappingFailures, result, secondOutput
 
-### Community 15 - "版本管理 CLI"
+### Community 14 - "版本管理 CLI"
 Cohesion: 0.30
 Nodes (12): cmd_audit(), cmd_bump(), cmd_check(), preflight_manifests(), read_json_field(), read_manifest_field(), read_yaml_field(), require_tool() (+4 more)
 
-### Community 16 - "插件入口与缓存"
+### Community 15 - "插件入口与缓存"
 Cohesion: 0.22
 Nodes (12): _bootstrapCache, _cacheChildSession(), _childSessionCache, __dirname, extractAndStripFrontmatter(), getBootstrapContent(), isChildSession(), setup() (+4 more)
+
+### Community 16 - "头脑风暴三路径"
+Cohesion: 0.22
+Nodes (14): brainstorming 技能 (SKILL.md), Architectural 路径, Bounded 路径, 设计文档约定 (docs/superpowers/specs/YYYY-MM-DD-<topic>-design.md), elements-of-style:writing-clearly-and-concisely 技能 (可选), HARD-GATE 实施前置门, 路径单向棘轮 (只能升级), Red Flags 表 (想法 vs 现实) (+6 more)
 
 ### Community 17 - "Shell 脚本 Lint"
 Cohesion: 0.38
 Nodes (12): add_shell_file(), collect_all_shell_files(), collect_changed_shell_files(), collect_requested_shell_files(), die(), ensure_git_work_tree(), is_shell_file(), require_tool() (+4 more)
 
 ### Community 18 - "Lint 脚本测试"
-Cohesion: 0.35
-Nodes (10): scripts/lint-shell.sh — shell lint 脚本, assert_contains(), assert_not_contains(), configure_git_identity(), fail(), make_fixture_repo(), pass(), run_lint_shell() (+2 more)
+Cohesion: 0.40
+Nodes (9): assert_contains(), assert_not_contains(), configure_git_identity(), fail(), make_fixture_repo(), pass(), run_lint_shell(), test-lint-shell.sh script (+1 more)
 
 ### Community 19 - "Python 测试夹具"
 Cohesion: 0.20
@@ -177,45 +180,51 @@ Nodes (6): assert_contains(), fail(), pass(), run_polluter(), setup_project(), t
 Cohesion: 0.29
 Nodes (6): description, keywords, main, name, type, version
 
-### Community 22 - "品牌图标资产"
+### Community 22 - "诊断与结构测试"
+Cohesion: 0.47
+Nodes (5): 会话异常诊断入口, diagnosing-superpowers — 用证据分析会话哪里出了问题, fail(), pass(), test-skill-structure.sh script
+
+### Community 23 - "品牌图标资产"
 Cohesion: 0.50
 Nodes (5): Superpowers App Icon (app-icon.png, 2134x2134 square PNG), Codex Plugin Asset Packaging, Superpowers Brand Identity (Prime Radiant), Codex Plugin Logo Role, Swoosh-and-Central-Dot Emblem Motif (mirrored curved wings around a center dot, per companion superpowers-small.svg)
 
-### Community 23 - "视觉伴侣实现档案"
+### Community 24 - "视觉伴侣实现档案"
 Cohesion: 0.83
 Nodes (4): Visual Brainstorming Companion Implementation Plan, Browser Helper Library (lib/brainstorm-server/helper.js), Brainstorm Server (lib/brainstorm-server/index.js), Visual Companion Reference (visual-companion.md)
 
-### Community 24 - "Hermes 版本接线实现"
+### Community 25 - "Hermes 版本接线实现"
 Cohesion: 1.00
 Nodes (3): Hermes Version-Bump Wiring Implementation Plan, Extension-Based Manifest Dispatcher (jq/yq), Preflight Manifest Reads
 
-### Community 25 - "Hermes 版本接线设计"
+### Community 26 - "Hermes 版本接线设计"
 Cohesion: 1.00
 Nodes (3): Hermes Version-Bump Wiring Design (spec), Read-Only Preflight Manifest Validation, Hermes plugin.yaml Version-Bump YAML Wiring
 
 ## Ambiguous Edges - Review These
 - `Swoosh-and-Central-Dot Emblem Motif (mirrored curved wings around a center dot, per companion superpowers-small.svg)` → `Superpowers App Icon (app-icon.png, 2134x2134 square PNG)`  [AMBIGUOUS]
   assets/app-icon.png · relation: conceptually_related_to
+- `skills/ — 12 个技能本体(纯 Inline 工作流),仓库核心资产` → `仓库差异:保留上游技能与完整设计档案`  [AMBIGUOUS]
+  README.md · relation: references
 
 ## Knowledge Gaps
-- **102 isolated node(s):** `SDD Workspace and Ledger`, `Red-Green-Refactor TDD Cycle`, `find-polluter.sh script`, `checkpoint`, `childEvent` (+97 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 164 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **114 isolated node(s):** `SDD Workspace and Ledger`, `Red-Green-Refactor TDD Cycle`, `checkpoint`, `childEvent`, `empty` (+109 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 176 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **What is the exact relationship between `Swoosh-and-Central-Dot Emblem Motif (mirrored curved wings around a center dot, per companion superpowers-small.svg)` and `Superpowers App Icon (app-icon.png, 2134x2134 square PNG)`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `executing-plans Skill` connect `OpenCode 插件集成` to `行为准则与 OpenCode 指南`, `分支完成与 Handoff 档案`, `基本工作流与核心技能`?**
-  _High betweenness centrality (0.239) - this node is a cross-community bridge._
-- **Why does `Review Focus(审查焦点)` connect `基本工作流与核心技能` to `OpenCode 插件集成`?**
-  _High betweenness centrality (0.180) - this node is a cross-community bridge._
-- **Why does `Bash Test Deletion Gate` connect `文档评审系统设计档案` to `Codex 兼容设计档案`?**
-  _High betweenness centrality (0.158) - this node is a cross-community bridge._
-- **Are the 2 inferred relationships involving `executing-plans 技能(内联执行计划)` (e.g. with `.opencode/plugins/superpowers.js — OpenCode 插件逻辑` and `executing-plans/scripts/task-brief`) actually correct?**
-  _`executing-plans 技能(内联执行计划)` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 2 inferred relationships involving `writing-plans 技能(实施计划编写)` (e.g. with `.opencode/plugins/superpowers.js — OpenCode 插件逻辑` and `skills/ 技能库(13 个技能,纯 Inline 工作流)`) actually correct?**
-  _`writing-plans 技能(实施计划编写)` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `SDD Workspace and Ledger`, `Red-Green-Refactor TDD Cycle`, `find-polluter.sh script` to the rest of the system?**
-  _102 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What is the exact relationship between `skills/ — 12 个技能本体(纯 Inline 工作流),仓库核心资产` and `仓库差异:保留上游技能与完整设计档案`?**
+  _Edge tagged AMBIGUOUS (relation: references) - confidence is low._
+- **Why does `executing-plans Skill` connect `行为准则与 OpenCode 指南` to `分支完成与 Handoff 档案`, `OpenCode 插件集成`, `基本工作流与核心技能`?**
+  _High betweenness centrality (0.278) - this node is a cross-community bridge._
+- **Why does `Review Focus(审查焦点)` connect `基本工作流与核心技能` to `行为准则与 OpenCode 指南`?**
+  _High betweenness centrality (0.224) - this node is a cross-community bridge._
+- **Why does `Bash Test Deletion Gate` connect `技能测试方法档案` to `Codex 兼容设计档案`, `OpenCode 插件集成`?**
+  _High betweenness centrality (0.168) - this node is a cross-community bridge._
+- **What connects `SDD Workspace and Ledger`, `Red-Green-Refactor TDD Cycle`, `checkpoint` to the rest of the system?**
+  _114 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `技能测试方法档案` be split into smaller, more focused modules?**
+  _Cohesion score 0.050921861281826165 - nodes in this community are weakly interconnected._

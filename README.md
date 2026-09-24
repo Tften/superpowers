@@ -74,7 +74,6 @@ OpenCode 需要 2.0.4 或更高版本。本地安装时,把本仓库目录(含 `
 - **finishing-a-development-branch** —— 合并/丢弃决策流程
 
 **元技能**
-- **writing-skills** —— 按最佳实践创建新技能(含测试方法论)
 - **using-superpowers** —— 技能系统入门
 
 ## 哲学
