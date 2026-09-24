@@ -156,10 +156,10 @@
     "semantic_hash": "8d709e7fad7d41f66076a9b2510fc6a4"
   },
   "AGENTS.md": {
-    "mtime": 1790252483.79098,
-    "seen": 1790253834.937877,
-    "ast_hash": "c3edfd988062ef22f491a9864d5f5557",
-    "semantic_hash": "c3edfd988062ef22f491a9864d5f5557"
+    "mtime": 1790265959.203576,
+    "seen": 1790267227.740518,
+    "ast_hash": "8b6934e99895ca5430363840765c3692",
+    "semantic_hash": "8b6934e99895ca5430363840765c3692"
   },
   "CODE_OF_CONDUCT.md": {
     "mtime": 1790218664.1109672,
@@ -168,10 +168,10 @@
     "semantic_hash": "569c735e4527859fc0a6646b68e980ef"
   },
   "README.md": {
-    "mtime": 1790252479.0884829,
-    "seen": 1790253834.937877,
-    "ast_hash": "3b77a68d48114a110e044ea7c1371566",
-    "semantic_hash": "3b77a68d48114a110e044ea7c1371566"
+    "mtime": 1790265953.8446565,
+    "seen": 1790267227.740518,
+    "ast_hash": "5f913566dfab19a980545767a7f1a51e",
+    "semantic_hash": "5f913566dfab19a980545767a7f1a51e"
   },
   "RELEASE-NOTES.md": {
     "mtime": 1790218664.1109672,
@@ -558,10 +558,10 @@
     "semantic_hash": "c0f20b950e8997b04bdc42defdc0b32d"
   },
   "skills/executing-plans/SKILL.md": {
-    "mtime": 1790254525.7668142,
-    "seen": 1790254993.9971883,
-    "ast_hash": "963633127f483ce7126e4bd91eab5376",
-    "semantic_hash": "963633127f483ce7126e4bd91eab5376"
+    "mtime": 1790265935.885271,
+    "seen": 1790267227.740518,
+    "ast_hash": "80e2efcbe2948081016e31178ab8063a",
+    "semantic_hash": "80e2efcbe2948081016e31178ab8063a"
   },
   "skills/receiving-code-review/SKILL.md": {
     "mtime": 1790218664.158746,
@@ -611,12 +611,6 @@
     "ast_hash": "e33c4b2d4053fbbe4f2bf3f1e5cbd3b6",
     "semantic_hash": "e33c4b2d4053fbbe4f2bf3f1e5cbd3b6"
   },
-  "skills/using-git-worktrees/SKILL.md": {
-    "mtime": 1790218664.158746,
-    "seen": 1790233383.5608523,
-    "ast_hash": "fe69b77dddcd8fb492fe08a7593b6bf1",
-    "semantic_hash": "fe69b77dddcd8fb492fe08a7593b6bf1"
-  },
   "skills/using-superpowers/SKILL.md": {
     "mtime": 1790235179.0987978,
     "seen": 1790237647.777419,
@@ -630,10 +624,10 @@
     "semantic_hash": "11932f7afbf9f7b629d22ba438f1deba"
   },
   "skills/writing-plans/SKILL.md": {
-    "mtime": 1790248784.4428825,
-    "seen": 1790251341.5152512,
-    "ast_hash": "5be3e7ff8732aacf25c60cea2a6be0c1",
-    "semantic_hash": "5be3e7ff8732aacf25c60cea2a6be0c1"
+    "mtime": 1790265939.0118153,
+    "seen": 1790267227.740518,
+    "ast_hash": "3ee772658181c1ff047f9a49e958cb3f",
+    "semantic_hash": "3ee772658181c1ff047f9a49e958cb3f"
   },
   "assets/app-icon.png": {
     "mtime": 1790218664.1109672,

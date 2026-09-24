@@ -96,9 +96,7 @@ digraph process {
 
 ## Setup
 
-Ensure the work happens in an isolated workspace: use
-superpowers:using-git-worktrees to create one or verify the existing one.
-Never start implementation on a main/master branch without your human
+Work on a feature branch, never on main/master without your human
 partner's explicit consent.
 
 Conversation memory does not survive compaction. An inline executor that

@@ -20,7 +20,7 @@
 
 | 路径 | 内容 |
 |---|---|
-| `skills/` | 12 个技能本体(纯 Inline 工作流),是仓库的核心资产 |
+| `skills/` | 11 个技能本体(纯 Inline 工作流),是仓库的核心资产 |
 | `.opencode/plugins/superpowers.js` | OpenCode 插件逻辑(bootstrap 注入 + 技能注册,内嵌工具映射) |
 | `index.js` | OpenCode V2 目录形式插件入口(re-export superpowers.js) |
 | `scripts/` | `lint-shell.sh`(shell lint)、`bump-version.sh`(版本同步) |

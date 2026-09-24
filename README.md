@@ -37,12 +37,11 @@ OpenCode 需要 2.0.4 或更高版本。本地安装时,把本仓库目录(含 `
 ## 基本工作流
 
 1. **brainstorming** —— 写代码前激活。通过提问打磨粗略想法,探索备选方案,分段呈现设计供确认,保存设计文档。
-2. **using-git-worktrees** —— 设计确认后激活。在新分支上创建隔离工作区,执行项目初始化,验证干净的测试基线。
-3. **writing-plans** —— 有了批准的设计后激活。把工作拆成小任务(每个 2-5 分钟),每个任务都有精确的文件路径、完整代码和验证步骤。
-4. **executing-plans** —— 有了计划后激活。在当前会话内联执行全部任务,最后对整个分支做一次全新审查(最省)。
-5. **test-driven-development** —— 实施期间激活。强制 RED-GREEN-REFACTOR:写失败测试、看着它失败、写最小实现、看着它通过、提交。删除先于测试编写的代码。
-6. **requesting-code-review** —— 任务之间激活。对照计划审查,按严重程度报告问题,关键问题阻塞推进。
-7. **finishing-a-development-branch** —— 任务完成后激活。验证测试,呈现选项(合并/保留/丢弃),清理 worktree。
+2. **writing-plans** —— 有了批准的设计后激活。把工作拆成小任务(每个 2-5 分钟),每个任务都有精确的文件路径、完整代码和验证步骤。
+3. **executing-plans** —— 有了计划后激活。在当前会话内联执行全部任务,最后对整个分支做一次全新审查(最省)。
+4. **test-driven-development** —— 实施期间激活。强制 RED-GREEN-REFACTOR:写失败测试、看着它失败、写最小实现、看着它通过、提交。删除先于测试编写的代码。
+5. **requesting-code-review** —— 任务之间激活。对照计划审查,按严重程度报告问题,关键问题阻塞推进。
+6. **finishing-a-development-branch** —— 任务完成后激活。验证测试,呈现选项(合并/保留/丢弃),清理分支。
 
 **agent 在执行任何任务前都会检查相关技能。** 这是强制工作流,不是建议。
 
@@ -70,7 +69,6 @@ OpenCode 需要 2.0.4 或更高版本。本地安装时,把本仓库目录(含 `
 - **executing-plans** —— 内联执行计划:一个上下文,一次终审
 - **requesting-code-review** —— 预审查清单
 - **receiving-code-review** —— 回应审查反馈
-- **using-git-worktrees** —— 并行开发分支
 - **finishing-a-development-branch** —— 合并/丢弃决策流程
 
 **元技能**
