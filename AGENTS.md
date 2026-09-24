@@ -22,11 +22,10 @@
 | `skills/` | 16 个技能本体,是仓库的核心资产 |
 | `.opencode/plugins/superpowers.js` | OpenCode 插件逻辑(bootstrap 注入 + 技能注册,内嵌工具映射) |
 | `index.js` | OpenCode V2 目录形式插件入口(re-export superpowers.js) |
-| `skills/brainstorming/scripts/` | 零依赖 brainstorm 服务器(server.cjs、frame-template.html、helper.js) |
 | `scripts/` | `lint-shell.sh`(shell lint)、`bump-version.sh`(版本同步) |
 | `docs/superpowers/` | 上游设计档案(specs + plans),只读参考 |
 | `docs/testing.md` | 测试设施说明 |
-| `tests/` | 非 LLM 测试(brainstorm-server、opencode、shell-lint 等) |
+| `tests/` | 非 LLM 测试(opencode、shell-lint 等) |
 | `graphify-out/` | 代码库知识图谱(见下) |
 
 ## 测试
@@ -35,14 +34,10 @@
 # OpenCode 插件测试(Windows 下 2 个用例因 symlink/tmp 路径问题固有问题失败)
 bash tests/opencode/run-tests.sh
 
-# brainstorm 服务器(需先在 tests/brainstorm-server/ 下 npm install)
-cd tests/brainstorm-server && npm test
-
 # 其余静态套件
 bash tests/shell-lint/test-lint-shell.sh
 bash tests/diagnosing-superpowers/test-skill-structure.sh
 bash tests/systematic-debugging/test-find-polluter.sh
-bash tests/writing-skills/test-render-graphs.sh   # 本机缺渲染工具,基线即失败
 bash tests/version-bump/test-bump-version.sh      # 本机缺 jq,基线即失败
 ```
 

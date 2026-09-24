@@ -95,7 +95,3 @@ OpenCode 需要 2.0.4 或更高版本。本地安装时,把本仓库目录(含 `
 ## 许可
 
 MIT License —— 见 LICENSE 文件。基于 obra/superpowers,版权归上游作者所有。
-
-## 可视化伴侣遥测
-
-brainstorming 的可视化伴侣默认从 Prime Radiant 网站加载 logo(仅含版本号,不含项目/提示词/agent 信息)。如需禁用,设置环境变量 `SUPERPOWERS_DISABLE_TELEMETRY` 为任意真值。
