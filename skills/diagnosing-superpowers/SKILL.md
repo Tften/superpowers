@@ -26,24 +26,24 @@ Create a todo per step. Steps 5–7 run only on their stated condition.
    (wall-clock, tokens, repeated actions, one specific action). "It took
    too long" is a complaint, not a problem statement. Note whether the
    goal is a superpowers bug report.
-2. **Locate.** Resolve each session to verified absolute filesystem paths using
+2. **Locate.** Resolve each session to verified absolute paths using
    `references/session-discovery.md`. Confirm a past session by quoting its
    first prompt and timestamp, and list every candidate you rejected with the
    reason, or "none". Enumerate subagent transcripts. Create
    `~/.superpowers/diagnosing-superpowers/<session-id>/`, tell your
    partner the path, and fill `templates/case.md` there, following its
-   provenance rules for environment and skill observations.
+   provenance rules.
 3. **Triage.** Read the region around the reported problem yourself. Then
-   dispatch one analyst subagent per dimension in parallel, each given the
+   dispatch one analyst per dimension in parallel, each given the
    case file path, `prompts/analyst-common.md`, and one dimension file from
    `prompts/`: `skill-timeline.md`,
    `plan-adherence.md`, `repeated-work.md`, `stumbles.md`,
    `quality-evidence.md`, `request-conflicts.md`, `cost-and-time.md`.
    Split a dimension by turn range when the transcript is long. Discard
-   any returned finding without `path:line`.
+   any finding without `path:line`.
 4. **Report.** Fill every section of `templates/report.md` in order, write
-   it to the workspace, show it, and give the path. Check what cited content
-   actually proves and preserve the supporting case; a symlink alias is not a
+   it to the workspace, show it with its path. Check what cited content
+   proves and preserve the supporting case; a symlink alias is not a
    redundant copy.
 5. **GitHub issues** — when report §7 says possible or likely, or your
    partner asks. Search open and closed issues for the symptoms per
@@ -72,7 +72,7 @@ Create a todo per step. Steps 5–7 run only on their stated condition.
 ## Quick reference
 
 All seven analysts always run. This table says which region to read
-yourself in step 3 and which findings to lead with in the verdict.
+yourself in step 3 and which findings to lead with.
 
 | Complaint | Read first, lead with |
 |---|---|
@@ -87,6 +87,8 @@ yourself in step 3 and which findings to lead with in the verdict.
 
 - **Context safety.** One transcript line can be a megabyte. Follow
   `references/context-safety.md` on every session file, every time.
+- **Dispatch or inline.** Where a step says dispatch, use a subagent tool
+  if available; otherwise run that prompt yourself.
 - **Read-only.** Never modify, move, or delete a session file.
 - **Exact paths to subagents.** A subagent's "current session" is its
   own. Pass absolute paths and ids.
