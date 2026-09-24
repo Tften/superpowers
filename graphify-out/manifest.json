@@ -599,30 +599,6 @@
     "ast_hash": "3788fcc4131d42565daabc2d29d64bdd",
     "semantic_hash": "3788fcc4131d42565daabc2d29d64bdd"
   },
-  "skills/systematic-debugging/test-academic.md": {
-    "mtime": 1790218664.158746,
-    "seen": 1790233383.5598662,
-    "ast_hash": "272ab1d95e755a7ff9479d547168eef9",
-    "semantic_hash": "272ab1d95e755a7ff9479d547168eef9"
-  },
-  "skills/systematic-debugging/test-pressure-1.md": {
-    "mtime": 1790218664.158746,
-    "seen": 1790233383.5598662,
-    "ast_hash": "3d8805e8946e3889d4de0e906af66c47",
-    "semantic_hash": "3d8805e8946e3889d4de0e906af66c47"
-  },
-  "skills/systematic-debugging/test-pressure-2.md": {
-    "mtime": 1790218664.158746,
-    "seen": 1790233383.5598662,
-    "ast_hash": "237f40dfd0b48af48d239ab3af499f7b",
-    "semantic_hash": "237f40dfd0b48af48d239ab3af499f7b"
-  },
-  "skills/systematic-debugging/test-pressure-3.md": {
-    "mtime": 1790218664.158746,
-    "seen": 1790233383.5608523,
-    "ast_hash": "42ea1bd281ca8d837f5dd45143762b95",
-    "semantic_hash": "42ea1bd281ca8d837f5dd45143762b95"
-  },
   "skills/test-driven-development/SKILL.md": {
     "mtime": 1790218664.158746,
     "seen": 1790233383.5608523,
