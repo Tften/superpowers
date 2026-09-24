@@ -207,18 +207,12 @@ const helperInjection = '<script>\n' + helperScript + '\n</script>';
 
 function readSuperpowersVersion() {
   const root = path.join(__dirname, '../../..');
-  const manifests = [
-    path.join(root, 'package.json'),
-    path.join(root, '.codex-plugin/plugin.json')
-  ];
 
-  for (const manifest of manifests) {
-    try {
-      const data = JSON.parse(fs.readFileSync(manifest, 'utf-8'));
-      if (data.version) return String(data.version);
-    } catch (e) {
-      // Packaged Codex plugins omit package.json; try the next manifest.
-    }
+  try {
+    const data = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf-8'));
+    if (data.version) return String(data.version);
+  } catch (e) {
+    // Fall through to the default below.
   }
 
   return 'unknown';
